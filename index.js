@@ -19,3 +19,9 @@ alert(prompt("write").slice(0,3));
 //uppercase and lowercase
 var name = "NAME"
 name = name.toLowerCase()
+
+//NOT fisnished excersise (79)
+var question = prompt("What is your name?");
+var letter = question.slice(0.1);
+var rest = question.slice(1);
+alert ("Hello " + letter + rest); 
