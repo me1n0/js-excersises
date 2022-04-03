@@ -15,3 +15,7 @@ alert(tweetLimit);
 
 // shorter version
 alert(prompt("write").slice(0,3));
+
+//uppercase and lowercase
+var name = "NAME"
+name = name.toLowerCase()
