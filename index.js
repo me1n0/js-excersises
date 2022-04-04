@@ -30,3 +30,10 @@ alert ("Hello " + letter.toUpperCase() + rest.toLowerCase());
 var dogAge = prompt("How old is your doggo?");
 var humanAge = ((dogAge - 2) * 4) + 21;
 alert("If your dog was a human he would be " + humanAge + " years old");
+
+//increment and decrement expressions
+var x = 5;
+x = x + 1; //6
+x++; //6, increment
+x--; //4 decrement
+x+= 2; //7
