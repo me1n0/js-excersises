@@ -20,8 +20,13 @@ alert(prompt("write").slice(0,3));
 var name = "NAME"
 name = name.toLowerCase()
 
-//NOT fisnished excersise (79)
+//excersize with uppercase and lowercase letters
 var question = prompt("What is your name?");
 var letter = question.slice(0,1);
 var rest = question.slice(1);
 alert ("Hello " + letter.toUpperCase() + rest.toLowerCase());
+
+//dog age 2 human age calculator
+var dogAge = prompt("How old is your doggo?");
+var humanAge = ((dogAge - 2) * 4) + 21;
+alert("If your dog was a human he would be " + humanAge + " years old");
