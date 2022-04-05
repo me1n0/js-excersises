@@ -42,11 +42,32 @@ x+= 2; //7
 function getMilk() {
     alert("leaveHouse");
     alert("moveRight");
-    alert("moveUp");
     alert("buyMilk");
-    alert("moveDown");
     alert("moveLeft");
     alert("enterHouse");
 }
 
 getMilk();
+
+//functions pt2
+function getMilk(bottles) {
+    alert("leaveHouse");
+    alert("moveRight");
+    alert("buy" + bottles + "bottles of milk");
+    alert("moveLeft");
+    alert("enterHouse");
+}
+
+getMilk(2);
+
+//functions pt3
+function getMilk(money) {
+    alert("leaveHouse");
+    alert("moveRight");
+    var numberOfBottles = Math.floor(money / 1.5);
+    alert("buy " + numberOfBottles + " bottles of milk");
+    alert("moveLeft");
+    alert("enterHouse");
+}
+
+getMilk(5);
