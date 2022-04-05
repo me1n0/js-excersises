@@ -37,3 +37,16 @@ x = x + 1; //6
 x++; //6, increment
 x--; //4 decrement
 x+= 2; //7
+
+//functions
+function getMilk() {
+    alert("leaveHouse");
+    alert("moveRight");
+    alert("moveUp");
+    alert("buyMilk");
+    alert("moveDown");
+    alert("moveLeft");
+    alert("enterHouse");
+}
+
+getMilk();
