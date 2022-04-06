@@ -122,3 +122,11 @@ function calcChange(startingAmmount, costPerBottle) {
 }
 
 console.log("here is your " + getMilk(4) + " change");
+
+// bmi calculator
+function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return  Math.round(bmi);
+}
+
+console.log(bmiCalculator(50, 1.8));
