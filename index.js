@@ -83,3 +83,42 @@ function lifeInWeeks(age) {
 }
 
 lifeInWeeks();
+
+// functions pt4
+function getMilk(money) {
+    alert("leaveHouse");
+    alert("moveRight");
+    var numberOfBottles = Math.floor(money / 1.5);
+    alert("buy " + numberOfBottles + " bottles of milk"); 
+    alert("moveLeft");
+    alert("enterHouse");
+    return money % 1.5; //remainder of da division
+}
+
+var change = getMilk(4);
+alert(change);
+
+// functions pt 5
+function getMilk(money) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    
+    console.log("buy " + calcBottles(money, 1.5) + " bottles of milk"); 
+    
+    console.log("moveLeft");
+    console.log("enterHouse");
+    
+    return calcChange(money, 1.5);
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+    var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+    return numberOfBottles;
+}
+
+function calcChange(startingAmmount, costPerBottle) {
+    var change = startingAmmount % costPerBottle;
+    return change;
+}
+
+console.log("here is your " + getMilk(4) + " change");
