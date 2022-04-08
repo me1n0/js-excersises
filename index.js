@@ -151,8 +151,53 @@ var two = prompt("name:");
 var n = Math.random() * 100;
 n = Math.floor(n) + 1;
 
-if (>60) { //(n === 100)
+if (n > 60) { //(n === 100)
     alert("The compatibility between " + one + " and " + two + " is " + n + "%, amazing!");
 } else {
     alert("damn loser");
 }
+
+/* === is equal to
+!== is not equal to
+> is greater than
+< is lesser than
+>= is greater or equal to
+<= is lesses or equal to
+
+&& and
+|| or 
+! not */
+
+// if and else statements pt 2
+var one = prompt("name:");
+var two = prompt("name:");
+var n = Math.random() * 100;
+n = Math.floor(n) + 1;
+
+if (n > 60) { //(n === 100)
+    alert("The compatibility between " + one + " and " + two + " is " + n + "%, amazing!");
+} if ( n > 30 && n <= 60) {
+    alert("okay i guess");
+} else {
+    alert("damn loser");
+}
+
+// leap year exercise
+function isLeap(year){
+    var question = prompt("year:");
+
+    if (question % 4 === 0) {
+        if (question % 100 === 0) {
+            if (question % 400 === 0) {
+                 alert("yes. divisible by 400.");
+            } else {
+                 alert("no. not divisible by 400.");
+            }
+        } else {
+            alert("yes. divisible by 100."); 
+        }
+    } else {
+        alert("no. not divisible by 4.");
+    }
+}
+isLeap();
