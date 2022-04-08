@@ -144,3 +144,15 @@ var two = prompt("name:");
 var n = Math.random() * 100;
 n = Math.floor(n) + 1;
 alert("The compatibility between " + one + " and " + two + " is " + n + "%");
+
+// if and else statements
+var one = prompt("name:");
+var two = prompt("name:");
+var n = Math.random() * 100;
+n = Math.floor(n) + 1;
+
+if (>60) { //(n === 100)
+    alert("The compatibility between " + one + " and " + two + " is " + n + "%, amazing!");
+} else {
+    alert("damn loser");
+}
