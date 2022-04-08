@@ -130,3 +130,10 @@ function bmiCalculator(weight, height) {
 }
 
 console.log(bmiCalculator(50, 1.8));
+
+//random number generator
+var n = Math.random(); // random and pseudorandom (this)
+n = n * 100;
+n = Math.floor(n) + 1;
+console.log(n + "%");
+n = Math.floor(n);
