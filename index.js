@@ -201,3 +201,7 @@ function isLeap(year){
     }
 }
 isLeap();
+
+// js arrays
+var guessList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+console.log(guessList[0]); //Angela
