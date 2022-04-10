@@ -205,3 +205,23 @@ isLeap();
 // js arrays
 var guessList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
 console.log(guessList[0]); //Angela
+
+// fizzbuzz excersise
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+    
+    output.push(count);
+    count++;
+    
+    console.log(output);
+}
+
+//var output = []; 
+//output.push(1);
+//output.pop;
+    
+//divisible by 3 - fizz
+// divisible by 5 - buzz
+// divisible by both - fizzbuzz
