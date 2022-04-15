@@ -236,3 +236,15 @@ count++;
 //while loop
 while(count <= 100){
 }
+
+var first = 99;
+var second = 98;
+var lyrics = " bottles of beer on the wall, ";
+var lyrics2 = " bottles of beer. Take one down and pass it around, ";
+var lyrics3 = " bottles of beer on the wall.";
+
+function beer() {
+    while(first => 1){
+    console.log( first-- + lyrics + first-- + lyrics2 + second-- + lyrics3);
+}
+}
