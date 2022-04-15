@@ -231,3 +231,8 @@ count++;
 //divisible by 3 - fizz
 // divisible by 5 - buzz
 // divisible by both - fizzbuzz
+
+
+//while loop
+while(count <= 100){
+}
