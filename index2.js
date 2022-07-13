@@ -32,3 +32,43 @@ let books = ['The Secret History', 'The Republic']
 console.log(books.length)
 
 console.log(books[0])
+
+//
+let books = ['The Secret History', 'The Illiad', 'The Republic', 'The Illiad']
+
+let count = 0
+for( let i = 0; i < books.length; i++) {
+  console.log(books[i])
+  if (books[i] === 'The Illiad') {
+    count = count + 1
+    console.log(count)
+  }
+}
+
+
+
+// objects
+const users = [
+  {
+    name: 'Henry',
+    lastName: 'Winter',
+    isAlive: false,
+  },
+  {
+    name: 'Richard',
+    lastName: 'Papen',
+    isAlive: true,
+  },
+  {
+    name: 'Camilla',
+    lastName: 'Macaulay',
+    isAlive: true,
+  }
+]
+console.log(users[0].isAlive)
+
+for (let i = 0; i < users.length; i++) {
+  if (users[i].isAlive === false) {
+    console.log(users[i].name + ' ' + users[i].lastName + ' ily')
+  }
+}
