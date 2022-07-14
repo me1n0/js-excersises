@@ -72,3 +72,25 @@ for (let i = 0; i < users.length; i++) {
     console.log(users[i].name + ' ' + users[i].lastName + ' ily')
   }
 }
+
+
+
+// functions
+function sendReminder(name, time) {
+  console.log('Hello ' + name + ', your meeting is at ' + time)
+}
+
+sendReminder('John', 10)
+sendReminder('Henry', 2)
+
+//
+let name = 'Henry'
+let count = 1
+
+function showAlert() {
+  console.log(name + ', wake up! This is your alarm number ' + count)
+  count += 1
+}
+
+showAlert()
+showAlert()
