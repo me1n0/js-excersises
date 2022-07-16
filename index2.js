@@ -152,3 +152,52 @@ textDisplay.innerHTML = newWord
 // changes the array (adds string(s) at the beginning)
 .push()
 // changes the array (adds string(s) at the end)
+
+// . slice() it doesn NOT mutate arrays, but makes new ones
+const movies = ['goodfellas', 'posseion', 'x', 'persona', 'the godfather']
+
+const weirdMovie = movies.slice(1,2)
+console.log(weirdMovie) //'possesion'
+//
+const movies2 = movies.slice(3)
+console.log(movies2) //'persona', 'the godfather'
+
+
+
+// .splice()
+const movies = ['posseion', 'x', 'persona']
+
+movies.splice(2, 0, 'a') // 'posseion', 'x', 'a', 'persona'
+//let splicedArray = array.splice(start,deleteCiunt, replacement)
+
+
+
+// .forEach()
+
+const circles = document.querySelectorAll('.circle')
+
+console.log(circles)
+
+circles.forEach(circle => circle.style.backgroundColor = 'red')
+//
+const names = ['henry', 'richard', 'camilla']
+
+names.forEach(name => console.log(name))
+//
+const scores = [3, 654, 56]
+
+scores.forEach(score => {
+  console.log(score + 2)
+}
+)
+
+
+
+// .some()
+const scores = [32, 53, 6, 7]
+
+console.log(scores.some(score => score > 50)) //true
+//
+const countries = ['russia', 'spain', 'france']
+
+console.log(countries.some(country => country === 'russia')) //true
