@@ -94,3 +94,61 @@ function showAlert() {
 
 showAlert()
 showAlert()
+
+
+
+// while loop
+let i = 0
+
+while (i < 100) {
+  console.log( i + ' beers on the wall')
+  i++
+}
+
+
+
+// .length()
+
+const balls = document.querySelectorAll('.ball');
+
+console.log(balls)
+
+
+
+// .concat()
+const string = 'say cheese, '
+const string2 = 'henry'
+
+// strings
+console.log(string.concat(string2))
+
+// arrays
+//does not change the existing arrays
+const array1 = [1,2,3]
+const array2 = [4,5,6]
+const array3 = [7,8,9]
+
+const newArray = array1.concat(array2, array3)
+
+console.log(newArray)
+
+
+
+//.join()
+// returns a NEW string
+
+const textDisplay = document.querySelector('.text')
+
+const emotions = ['sad', 'happy']
+const newWord = emotions.join('')
+
+textDisplay.innerHTML = newWord
+
+
+
+// .pop(), .shift(), .unshift(), push()
+
+.unshift()
+// changes the array (adds string(s) at the beginning)
+.push()
+// changes the array (adds string(s) at the end)
