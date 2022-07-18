@@ -201,3 +201,66 @@ console.log(scores.some(score => score > 50)) //true
 const countries = ['russia', 'spain', 'france']
 
 console.log(countries.some(country => country === 'russia')) //true
+
+
+
+// .map()
+//creates a new array
+
+//const newArray = values.map(value => value)
+
+const ages2019 = [23, 56, 13, 45, 27]
+
+const ages2022 = ages2019.map(age => age + 3)
+
+console.log(ages2022)
+
+//
+const mates = [
+  {
+    name: 'a',
+    age: 23
+  },
+  {
+    name: 'b',
+    age: 17
+  },
+  {
+    name: 'c',
+    age: 19
+  }
+]
+
+const mates2022 = mates.map(mates => mates.age + 3)
+
+console.log(mates2022)
+
+
+
+// .filter()
+// creates a new array
+
+const shows = ['Supernatural', 'Twin Peaks', '24', 'H20']
+
+ const display = shows.filter(word => word.length <= 5)
+
+ console.log(display)
+
+
+
+// .reduce()
+//scores.reduce((accumulator, currentValue) => accumulator + currentValue)
+const scores = [ 4, 5, 2, 5]
+
+const total = scores.reduce((total, currentValue) => total + currentValue)
+
+console.log(total) //16
+
+
+
+// .every()
+// if everything in the array matche the rule, return false
+
+const testResults = [34, 67, 24, 35, 85]
+
+console.log(testResults.every(result => result > 30)) //false
