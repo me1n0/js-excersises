@@ -264,3 +264,15 @@ console.log(total) //16
 const testResults = [34, 67, 24, 35, 85]
 
 console.log(testResults.every(result => result > 30)) //false
+
+
+
+// .split()
+
+const sentence = 'i pissed myself'
+
+console.log(sentence.split(' ')) //(3) ["i", "pissed", "myself"]
+console.log(sentence.split('')) //(15) ["i", " ", "p", "i", "s", "s", "e", "d", " ", "m", …]
+//
+const words = sentence.split(' ')
+console.log(words[2]) //myself
