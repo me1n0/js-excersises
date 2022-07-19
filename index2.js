@@ -280,7 +280,7 @@ console.log(words[2]) //myself
 
 
 //exercises
-//
+// No.1
 const farenheit = [23, 212, 41]
 let celciusArray
 
@@ -290,3 +290,55 @@ function getCelcius() {
 
 getCelcius()
 console.log(celciusArray)
+
+//No.2
+const values = [11, NaN, [], 'Angels']
+function checkForFalsey() {
+  return values.some(value => !value)
+}
+
+console.log(checkForFalsey())
+
+//No.3
+const words = ['Rabbit', 'Football', 'Cracking']
+function getTotal() {
+  return words.reduce((total, word) => total + word.length, 0)
+}
+
+console.log(getTotal())
+
+//No.4
+const numbers = [9, 16, 81]
+function checkSquare() {
+  return numbers.every(i => Math.sqrt(i) % 1 === 0)
+}
+
+console.log(checkSquare())
+
+//No.5
+const wordsArray = ['Florida', 'dog', 'phone']
+const number = 5
+function getWords() {
+  return wordsArray.filter(word => word.length >= number)
+}
+
+console.log(getWords())
+
+//No.6
+const cms = ['23cm', '5.6cm', '1000cm']
+
+function getValues() {
+  return cms.map(value => parseFloat(value))
+}
+
+console.log(getValues())
+
+//No.7
+const sentence = 'In West Philadelphia, born and raised'
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+function getVowelCount() {
+  return sentence.split('').filter(letter => vowels.includes(letter)).length
+}
+
+console.log(getVowelCount())
