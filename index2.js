@@ -276,3 +276,17 @@ console.log(sentence.split('')) //(15) ["i", " ", "p", "i", "s", "s", "e", "d", 
 //
 const words = sentence.split(' ')
 console.log(words[2]) //myself
+
+
+
+//exercises
+//
+const farenheit = [23, 212, 41]
+let celciusArray
+
+function getCelcius() {
+  celciusArray = farenheit.map(value => (value - 32) * 5/9)
+}
+
+getCelcius()
+console.log(celciusArray)
