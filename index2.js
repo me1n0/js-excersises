@@ -342,3 +342,12 @@ function getVowelCount() {
 }
 
 console.log(getVowelCount())
+
+//No.8
+const sentence = 'the queens gambit'
+
+function capitalise() {
+  return sentence.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1)).join(' ')
+}
+
+console.log(capitalise())
