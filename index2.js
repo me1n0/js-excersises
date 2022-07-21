@@ -351,3 +351,36 @@ function capitalise() {
 }
 
 console.log(capitalise())
+
+
+
+// .addEventListener()
+// target.addEventListener(event, function)
+
+const hexagon = document.getElementById('hexagon')
+
+function alertMe() {
+  console.log('clicked')
+}
+
+hexagon.addEventListener('mouseover', alertMe)
+
+
+
+// this is used sometimes??            document.addEventListener('DOMContentLoaded', () => {
+} )
+
+
+
+// .removeEventListener()
+const circle = document.querySelector('.circle')
+let count = 0
+
+function toggleColor() {
+  circle.classList.toggle('red-circle')
+  count++
+  if (count > 10) {
+    circle.removeEventListener('click', toggleColor)
+  }
+}
+circle.addEventListener('click', toggleColor)      //circle changes color, but after count 10 it stops
