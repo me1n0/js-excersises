@@ -411,3 +411,8 @@ const randomInteger = Math.floor(randomNumber)
 console.log(randomInteger)
 
 console.log(Tetrominoes[randomInteger])
+
+//
+const drinksMenu = ['vodka', 'water', 'limonade', 'beer']
+
+console.log(drinksMenu[Math.floor(Math.random() * drinksMenu.length)])
