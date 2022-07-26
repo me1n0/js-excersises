@@ -384,3 +384,30 @@ function toggleColor() {
   }
 }
 circle.addEventListener('click', toggleColor)      //circle changes color, but after count 10 it stops
+
+
+
+// .querySelector()
+
+const circle = document.querySelector('#main')
+
+console.log(circle)
+
+
+
+// .math.random()
+
+const Tetrominoes = ['a', 'b', 'c']
+
+const randomNumber = Math.random() * Tetrominoes.length
+console.log(randomNumber)
+
+// math.floor() - rounds numbers down 2 the nearest integer
+// math.cell() - round up
+// math.round() - round 2 nearest integer
+
+const randomInteger = Math.floor(randomNumber)
+
+console.log(randomInteger)
+
+console.log(Tetrominoes[randomInteger])
