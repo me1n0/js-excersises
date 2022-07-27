@@ -416,3 +416,56 @@ console.log(Tetrominoes[randomInteger])
 const drinksMenu = ['vodka', 'water', 'limonade', 'beer']
 
 console.log(drinksMenu[Math.floor(Math.random() * drinksMenu.length)])
+
+
+
+//Date
+const today = new Date()
+const date = today.getDate() //date num
+const day = today.getDay() //day of the week
+const year = today.getFullYear()
+const time = today.getHours()
+const isoString = today.toISOString() // numeric value
+
+//days to xmas timer
+const display = document.querySelector('.date')
+const today = new Date()
+
+const christmas = new Date('2022-12-24T19:49:56.367Z')
+
+console.log (christmas - today)
+
+const milSec = christmas - today
+const minutes = milSec / 6000
+
+display.innerHTML = Math.round(minutes)
+
+//
+//setTimeout()
+// setTimeout(function, milliseconds)
+
+const speechBubble = document.querySelector(".bubble");
+const time = 3000;
+
+function showText() {
+  speechBubble.innerHTML = "sup"; //appears after 3s
+}
+
+setTimeout(showText, time);
+
+// function delTxt() {
+//   speechBubble.innerHTML = '' //txt disappears after 10s
+// }
+
+// setTimeout(delTxt, 10000)
+
+setTimeout(function () {speechBubble.innerHTML = ""};
+           
+//
+const bubble = document.querySelector('.bubble')
+
+function deleteBubble() {
+  bubble.style.display = 'none'
+}
+
+setTimeout(deleteBubble, 5000)
