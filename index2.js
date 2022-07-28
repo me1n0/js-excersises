@@ -469,3 +469,101 @@ function deleteBubble() {
 }
 
 setTimeout(deleteBubble, 5000)
+
+
+
+// Classes
+// Class Declaration
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+const newRectangle = new Rectangle(300, 100)
+
+console.log(newRectangle.height)
+
+//pacman
+class Ghost {
+  constructor(className, speed, color, startingPoint) {
+    this.className = className;
+    this.speed = speed;
+    this.color = color;
+    this.startingPoint = startingPoint;
+  }
+}
+
+const blinky = new Ghost('blinky', 300, 'red', 4)
+const inky = new Ghost('inky', 250, 'blue', 10)
+const pinky = new Ghost('pinky', 350, 'pink', 20)
+const clyde = new Ghost('clyde', 450, 'orange', 15)
+
+console.log(blinky.speed)
+
+
+
+// keys
+const circle = document.querySelector(".circle");
+
+function control(e) {
+  if (e.key === "ArrowLeft") { // e.keyCode
+    console.log("pressed left");
+  } else if (e.key === "ArrowRight") {
+    console.log("pressed right");
+  } else if (e.key === "ArrowUp") {
+    console.log("pressed up");
+  } else if (e.key === "ArrowDown") {
+    console.log("pressed down");
+  } else if (e.key === "a") {
+    console.log("pressed a");
+  }
+}
+  
+document.addEventListener("kydown", control);
+     
+// switch
+const circle = document.querySelector(".circle");
+
+function control(e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      console.log("pressed left");
+      break;
+    case "a":
+      console.log("pressed a");
+      break;
+  }
+}
+
+document.addEventListener("keydown", control);
+
+//cirle moving with keys
+const circle = document.querySelector(".circle");
+let xAxis = 0;
+let yAxis = 0;
+
+function control(e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      xAxis -= 50;
+      circle.style.left = xAxis + "px";
+      break;
+    case "ArrowRight":
+      xAxis += 50;
+      circle.style.left = xAxis + "px";
+      break;
+    case "ArrowUp":
+      yAxis -= 50;
+      circle.style.top = yAxis + "px";
+      break;
+    case "ArrowDown":
+      yAxis += 50;
+      circle.style.top = yAxis + "px";
+      break;
+  }
+}
+
+document.addEventListener("keydown", control);
+
