@@ -567,3 +567,27 @@ function control(e) {
 
 document.addEventListener("keydown", control);
 
+
+
+// .sort ()
+const ages = [23, 56, 4, 78, 2]
+
+console.log(ages.sort())
+
+
+
+// .includes()
+
+const books = ['goldfinch', 'the stanger', 'metamorphosis']
+
+const isInBooks = books.includes('metamorphosis')
+
+console.log(isInBooks)
+
+
+
+// . contains()
+const body = document.querySelector('body')
+const circle = document.querySelector('.circle')
+
+console.log(body.contains(circle))
